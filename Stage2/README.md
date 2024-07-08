@@ -55,6 +55,4 @@ This task involves creating a backend application that implements user authentic
 
 
 
-Please refer to the original prompt for more details on the request and response payloads for each endpoint.
-
-If you have any questions or need further clarification, feel free to ask!
+Agboola Olalekan Samson
