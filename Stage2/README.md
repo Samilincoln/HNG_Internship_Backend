@@ -56,3 +56,4 @@ This task involves creating a backend application that implements user authentic
 
 
 Agboola Olalekan Samson
+HNG Back-End Intern
