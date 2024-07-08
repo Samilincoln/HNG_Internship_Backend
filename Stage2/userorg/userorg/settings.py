@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 import dj_database_url
+import os
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -90,10 +92,11 @@ WSGI_APPLICATION = "userorg.wsgi.app"
     }
 }
 '''
+load_dotenv()
 
 DATABASES = {
     'default': dj_database_url.parse(
-        'postgresql://postgres.kxnamwnunhaaeypdhbbu:Olamilekan@100@aws-0-eu-central-1.pooler.supabase.com:6543/postgres',
+        os.getenv('DATABASE_URL'),
         conn_max_age=600
     )
 }
